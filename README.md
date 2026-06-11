@@ -1,13 +1,12 @@
 
-<<<<<<< HEAD
 # Análise do Impacto de Condições Adversas de Rede na QoE de Streaming HLS
 
-**Disciplina:** Análise de Desempenho de Redes de Computadores  
-**Autor:** Halyson Lima  
+**Disciplina:** Análise de Desempenho de Redes de Computadores
+**Professor:** Arthut Callado  
+**Aluno:** Halyson Lima  
 **Instituição:** Universidade Federal do Ceará  
-**Data:** Junho de 2026
+**Data:** Maio - Junho de 2026
 
----
 
 ## Resumo
 
@@ -15,7 +14,6 @@ Este estudo experimental quantifica o impacto de diferentes níveis de **perda d
 
 Os resultados demonstram que a **latência é o fator dominante** na degradação da QoE, com redução de 63% no goodput ao adicionar 50ms de delay, contra apenas 18% ao adicionar 15% de perda. O **ponto de ruptura** foi identificado em 500ms de latência, onde o goodput colapsa para abaixo do bitrate mínimo (1.200 Kbps), causando stalls em todas as repetições. A **interação entre fatores** só se mostra significativa na faixa de 200ms, e o **ABR apresenta comportamento binário** (máximo ou mínimo) em função da latência. Por fim, **HTTP 200 OK = 100%** em todos os experimentos, evidenciando que disponibilidade do serviço não implica boa QoE.
 
----
 
 ## Sobre o Trabalho
 
@@ -27,7 +25,6 @@ O experimento utiliza emulação de rede controlada com **Mininet** e **tc netem
 
 Streaming representa mais da metade do tráfego global de internet. A QoE pode colapsar mesmo com o serviço HTTP 100% disponível. Compreender os limiares de degradação é essencial para dimensionar infraestruturas de streaming. O HLS opera sobre HTTP/TCP e as condições adversas afetam diretamente o throughput TCP e, por consequência, o comportamento do ABR.
 
----
 
 ## Objetivos
 
@@ -37,7 +34,6 @@ Streaming representa mais da metade do tráfego global de internet. A QoE pode c
 | **Secundário** | Comparar o efeito isolado de cada fator (só perda / só latência) versus o efeito combinado dos dois fatores simultaneamente |
 | **Terciário** | Identificar os limiares de perda e latência a partir dos quais a QoE se torna severamente degradada (stalls > 0, bitrate < 1.000 Kbps) |
 
----
 
 ## Métricas
 
@@ -60,7 +56,6 @@ Streaming representa mais da metade do tráfego global de internet. A QoE pode c
 
 - RTT medido · Jitter medido · Perda medida · HTTP OK percentual
 
----
 
 ## Fatores e Níveis — Fatorial Completo 4×4
 
@@ -73,7 +68,6 @@ Streaming representa mais da metade do tráfego global de internet. A QoE pode c
 
 Identificação dos cenários: `p{perda}_d{delay}` — ex: `p5_d200` = 5% de perda, 200 ms de delay.
 
----
 
 ## Configuração do Experimento
 
@@ -493,6 +487,3 @@ experimento/
 - MATHIS, M. et al. The Macroscopic Behavior of the TCP Congestion Avoidance Algorithm. ACM SIGCOMM Computer Communication Review, v. 27, n. 3, p. 67-82, 1997.
 - MININET TEAM. Mininet: An Instant Virtual Network on your Laptop. Disponível em: https://mininet.org/. Acesso em: 11 jun. 2026.
 - PANTOS, R.; MAY, W. HTTP Live Streaming. RFC 8216, RFC Editor, 2017.
-
-=======
->>>>>>> 3bd84babce7badbc328c8835bde7cc03220145b3
