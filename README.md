@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 # Análise do Impacto de Condições Adversas de Rede na QoE de Streaming HLS
 
 **Disciplina:** Análise de Desempenho de Redes de Computadores  
@@ -493,3 +494,5 @@ experimento/
 - MININET TEAM. Mininet: An Instant Virtual Network on your Laptop. Disponível em: https://mininet.org/. Acesso em: 11 jun. 2026.
 - PANTOS, R.; MAY, W. HTTP Live Streaming. RFC 8216, RFC Editor, 2017.
 
+=======
+>>>>>>> 3bd84babce7badbc328c8835bde7cc03220145b3
