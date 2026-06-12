@@ -2,7 +2,7 @@
 # Análise do Impacto de Condições Adversas de Rede na QoE de Streaming HLS
 
 **Disciplina:** Análise de Desempenho de Redes de Computadores  
-**Professor:** Arthut Callado   
+**Professor:** Arthur Callado   
 **Aluno:** Halyson Lima   
 **Instituição:** Universidade Federal do Ceará  
 **Data:** Maio - Junho de 2026
